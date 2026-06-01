@@ -42,8 +42,8 @@ public class CssXpathExamples {
         $("div.inputtext input.login_form_input_box").setValue("1");
 
         //<div>Hello, qa.guru!</div>
-        $x("//*[text()='Hello, qa.guru!']"); //bad practice
-        $x("//*[contains(text(),'Hello, qa.guru!')]");
+        $x("//*[text()='Hello, qa.guru!']").setValue("1"); //bad practice
+        $x("//*[contains(text(),'Hello, qa.guru!')]").setValue("1");
         $(byText("Hello, qa.guru!")).setValue("1");
         $(withText("lo, qa")).setValue("1");
         }
