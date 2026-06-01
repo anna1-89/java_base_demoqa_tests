@@ -1,24 +1,12 @@
 package tests;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class TexBoxTests {
-
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.browserSize = "1920x1080";
-        Configuration.browser = "chrome";
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.timeout = 10000; // default 4000
-
-    }
+public class TexBoxTests extends TestBase {
 
     @Test
     void successfulFillFormTest() {
